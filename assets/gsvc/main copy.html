@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- footer -->
+    <div class="banner">
+      <div class="inner">
+        <div class="banner__tit">배너모음 </div>
+        <div class="swiper-container" id="banner-slide">
+          <ul class="banner__list swiper-wrapper">
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner01.png" alt="중소벤처기업부">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner02.png" alt="중소벤처기업연구원">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner03.png" alt="온라인 법인설립시스템">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner04.png" alt="정부24">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner05.png" alt="방위사업부">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner01.png" alt="중소벤처기업부">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner02.png" alt="중소벤처기업연구원">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner03.png" alt="온라인 법인설립시스템">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner04.png" alt="정부24">
+              </a>
+            </li>
+            <li class="banner__item swiper-slide">
+              <a href="#" class="banner__link" target="_blank" title="새창 이동">
+                <img src="../img/banner05.png" alt="방위사업부">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="banner__btn-wrap">
+          <button type="button" data-control="prev" class="banner__btn-wrap--prev">
+            <span>배너모음 이전</span>
+          </button>
+          <button type="button" data-control="next" class="banner__btn-wrap--next">
+            <span>배너모음 다음</span>
+          </button>
+          <button type="button" data-control="play" class="banner__btn-wrap--start">
+            <span>배너모음 재생</span>
+          </button>
+          <button type="button" data-control="stop" s class="banner__btn-wrap--stop">
+            <span>배너모음 정지</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer eee -->
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+
+  <script>
+    $(function () {
+
+      new Swiper('#banner-slide', {
+        slidesPerView: "5",
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+          prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      var bannerSetting = {
+        slidesPerView: "3",
+        spaceBetween: "15",
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          // 버튼 사용자 지정
+          nextEl: ".banner__btn-wrap--prev",
+          prevEl: ".banner__btn-wrap--next",
+        },
+
+        breakpoints: { //반응형 조건 속성
+          1200: { //640 이상일 경우
+            slidesPerView: 4, //레이아웃 2열
+          },
+          900: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 1,
+          },
+        }
+      }
+
+      const bannerSlide = new Swiper("#banner-slide", bannerSetting);
+
+
+      $(".banner__btn-wrap--start").on("click", function () {
+        bannerSlide.autoplay.start();
+        $(".banner__btn-wrap--stop").show();
+        $(".banner__btn-wrap--start").hide();
+        $(".banner__btn-wrap--stop").focus();
+        return false;
+
+      });
+      $(".banner__btn-wrap--stop").on("click", function () {
+        bannerSlide.autoplay.stop();
+        $(".banner__btn-wrap--stop").hide();
+        $(".banner__btn-wrap--start").show();
+        $(".banner__btn-wrap--start").focus();
+        return false;
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

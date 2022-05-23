@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- common js -->
+  <script src="../js/common.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- header -->
+    <div class="headerWrap">
+      <div class="bgSub">
+        <div class="inner">
+          <div class="change-img">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="headerTop">
+        <div class="inner flex flex-al-center flex-jc-bt">
+          <div class="headerTop__left flex flex-al-center flex-jc-bt">
+            <div class="headerTop__left-txt">
+              <img src="../img/icon-login.png" alt="로그인 아이콘">
+              <p>
+                기관담당자 (채관리)님이 로그인 하셨습니다.
+              </p>
+            </div>
+            <div class="headerTop__left-state">
+              <button class="btn-mid bg-secondary radius-mid">기관담당자 시스템 전환</button>
+            </div>
+          </div>
+          <div class="headerTop__right">
+            <ul>
+              <li>
+                <a href="#">로그아웃</a>
+              </li>
+              <li>
+                <a href="#">회원정보변경</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+              <li>
+                <a href="#">
+                  전체메뉴
+                  <span>
+                    <img src="../img/all-menu.png" alt="전체메뉴 아이콘">
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="header">
+        <div class="inner">
+          <h1 class="header__logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="g4b기업지원플러스">
+            </a>
+          </h1>
+
+          <!-- gnb 메뉴 -->
+          <ul id="gnb">
+            <li>
+              <a href="../gsvc/이용안내.html" class="gnb_li">사업장 정보변경 </a>
+              <ul>
+                <li><a href="../gsvc/이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/정보변경신청01.html">정보변경 신청</a></li>
+                <li><a href="../gsvc/정보변경내역.html">정보변경 내역</a></li>
+                <li><a href="../gsvc/자동차비용납부.html">자동차 비용납부</a></li>
+                <li><a href="../gsvc/4대보험증명서.html">4대보험 증명서</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/신청발급이용안내.html" class="gnb_li">성적서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/수요기관 연계.html">수요기관 연계</a></li>
+                <li><a href="../gsvc/성적서신청.html">성적서 신청</a></li>
+                <li><a href="../gsvc/성적서조회발급.html">성적서 조회발급</a></li>
+                <li><a href="../gsvc/성적서진위확인.html">성적서 진위확인</a></li>
+                <li><a href="../gsvc/발급기관조회.html">발급기관 조회</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인증서신청발급이용안내.html" class="gnb_li">인증서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인증서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인증심사 신청</a></li>
+                <li><a href="../gsvc/인증서조회발급.html">인증서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인정서신청발급이용안내.html" class="gnb_li">인정서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인정서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인정심사 신청</a></li>
+                <li><a href="../gsvc/인정서조회발급.html">인정서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="gnb_li">실적서 신청발급</a>
+              <ul>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">협회회원 등록</a></li>
+                <li><a href="#">실적신고 등록</a></li>
+                <li><a href="#">실적신고 내역</a></li>
+                <li><a href="#">실적서 신청</a></li>
+                <li><a href="#">실적서 조회발급</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div class="mo-header is-web-show">
+        <span class="open-mb-nav">
+          <span class="hamburger"></span>
+        </span>
+      </div>
+
+      <div class="mMenu is-web-show">
+        <span class="mclose"> <a href="#" class="closer"><img
+              src="https://www.incheon.go.kr/humanframe/theme/forty/assets/img/p_closes.png" alt="">
+          </a>
+        </span>
+        <ul class="mtitle">
+          <a href="#none">
+            <img src="../img/logo.png" alt="">
+          </a>
+        </ul>
+        <ul class="list">
+          <div class="navs" id="demo1">
+            <li><a href="#none">메뉴1</span></a>
+              <ul data-index="0">
+                <li>
+                  <a href="#none">하위메뉴1</span></a>
+                  <ul data-index="1">
+                    <li>
+                      <a href="#none">하위메뉴 번째</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴2</span></a>
+              <ul data-index="2">
+                <li><a href="#none">하위메뉴1</a></li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+                <li><a href="#none">하위메뉴4</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴3</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- header eee-->
+
+    <!-- content -->
+    <div class="subContents">
+      <!-- 로케이션 -->
+      <div id="content-location" class="content-location">
+        <div class="content-location-inner">
+          <ul>
+            <li class="home">
+              <span>
+                <a href="#none">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#none">
+                  사업장 정보변경 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+            <li class="last">
+              <span>
+                <a href="#none">
+                  이용안내 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 로케이션 eee -->
+
+      <div class="inner">
+        <div class="subContents__header">
+          <div class="content-title-wrap">
+            <h3 class="content-title">
+              정보변경 신청</h3>
+          </div>
+          <div class="content-share-wrap">
+            <div class="btn-group">
+              <button type="button" class="btn-share">
+                <span>공유레이어열기</span>
+              </button>
+              <button type="button" class="btn-print">
+                <span>인쇄</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="subContents__info">
+
+          <div class="step-list-wrap steps5">
+            <ol>
+              <li><span><strong>01.</strong> 변경항목 선택</span></li>
+              <li><span><strong>02.</strong> 변경내역 입력</span></li>
+              <li><span><strong>03.</strong> 구비서류첨부</span></li>
+              <li class="active" aria-current="page"><span><strong>04.</strong> 변경내역 최종확인</span></li>
+            </ol>
+          </div>
+
+          <div class="com-noti mb0">
+            <div class="com-noti__right">
+              <p>· 변경내역의 최종확인 페이지 입니다. <span class="c_main">
+                  &lt;수정&gt;
+                </span> 버튼을 누르시면 &lt;임시저장&gt;메뉴로 이동하여 변경내역 수정이 가능합니다.
+              </p>
+              <p>· 아래 변경 내역을 확인하신 후 <span class="c_main">
+                  &lt;신청 완료하기&gt; 버튼을 누르면 각 기관별로 일괄변경 신청이 완료
+                </span>됩니다.
+              </p>
+              <p>
+                · 신청완료 후 처리현황 확인은 <span class="c_main">
+                  &lt;나의 G4B&gt; 일괄변경처리현황&gt;
+                </span> 메뉴에서 확인 가능합니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="btn-wrap mt10 flex-jc-e">
+            <button class="btn btn-lg bg-black mr5">이전</button>
+            <button class="btn btn-lg bg-black mr5">임시저장</button>
+            <button class="btn btn-lg bg-black mr5">다음</button>
+            <button class="btn btn-lg bg-main">신청 완료하기</button>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                사업자 기준정보
+              </h4>
+            </div>
+            <div class="form-group">
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>사업자유형</label>
+                  </dt>
+                  <dd>
+                    법인사업자
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>상호</label>
+                  </dt>
+                  <dd>
+                    트랜드와이어
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>사업자번호
+                    </label>
+                  </dt>
+                  <dd>
+                    890-88-282828
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>대표자성명</label>
+                  </dt>
+                  <dd>
+                    홍길동
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>전화번호
+                    </label>
+                  </dt>
+                  <dd>
+                    010-233-2222
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>이메일주소</label>
+                  </dt>
+                  <dd>
+                    box4101@nate.com
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>주소 </label>
+                  </dt>
+                  <dd>
+                    서울시 성동구 왕십리로24나길 20 2층 240호 (도선동)
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>이용자 휴대폰번호 </label>
+                  </dt>
+                  <dd>
+                    010-1233-3466
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                전체 변경내역(공통)
+              </h4>
+            </div>
+
+            <div class="scroll-tbl-wrap mt10">
+              <div>
+                <table class="list-table">
+                  <colgroup>
+                    <col width="10%">
+                    <col width="8%">
+                    <col width="13.5%">
+                    <col width="25%">
+                    <col width="25%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>구분</th>
+                      <th>입력항목</th>
+                      <th>변경일</th>
+                      <th>변경전 내역</th>
+                      <th>변경후 내역</th>
+                    </tr>
+                    <tr>
+                      <td>상호</td>
+                      <td> 상호명<span class="c_red">*</span> </td>
+                      <td> 2022-04-10 </td>
+                      <td> 글자테스트~~~글자테스트~~~글자테스트~~~
+                      </td>
+                      <td> 주식회사 아미코젠처시픽 (Amicogen Pacific.,Inc.)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                사업자등록정보 변경(국세청)
+              </h4>
+            </div>
+
+            <div class="com-agree-wrap">
+              <div class="info">
+                <p class="c_main">
+                  임대차내역 : 동일 세무서로 이전, 자가 → 자가
+                </p>
+              </div>
+            </div>
+
+            <div class="section__header mt10">
+              <h4>
+                임대인
+              </h4>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>사업자등록번호</label>
+                  </dt>
+                  <dd>
+                    테드코리아
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>상호(법인명)
+                    </label>
+                  </dt>
+                  <dd>
+                    테드코리아
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>법인등록번호
+                    </label>
+                  </dt>
+                  <dd>
+                    황철원
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>성명(대표자)
+                    </label>
+                  </dt>
+                  <dd>
+                    황철원
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="section__header mt10">
+              <h4>
+                임차부동사
+              </h4>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>소재지
+                    </label>
+                  </dt>
+                  <dd>
+                    도로명 : 서울특별시 강남구 테헤란로25길 20,1513호 (역삼동, 역삼현대벤처텔) <br>
+                    법정동 : 서울특별시 강남구 테헤란로25길 20,1513호 (역삼동, 역삼현대벤처텔)
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="section__header mt10">
+              <h4>
+                계약내용
+              </h4>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>계약일자</label>
+                  </dt>
+                  <dd>
+                    2022-05-22
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    </abel>이전계약종료일자
+                    </label>
+                  </dt>
+                  <dd>
+                    2022-05-22
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>계약기간
+                    </label>
+                  </dt>
+                  <dd>
+                    2022-05-22
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>보증금
+                    </label>
+                  </dt>
+                  <dd>
+                    2022-05-22
+
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>월세
+                    </label>
+                  </dt>
+                  <dd>
+                    2,034,345원
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>면적
+                    </label>
+                  </dt>
+                  <dd>
+                    1099892평
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                부업태/부업종
+              </h4>
+            </div>
+
+            <div class="section__body">
+              <div class="scroll-tbl-wrap mt10">
+                <div>
+                  <table class="list-table">
+                    <colgroup>
+                      <col width="10%">
+                      <col width="15%">
+                      <col width="13.5%">
+                      <col width="25%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>구분</th>
+                        <th>입력항목</th>
+                        <th>변경일</th>
+                        <th>변경내역</th>
+                      </tr>
+                      <tr>
+                        <td>상호</td>
+                        <td> 부업태/부업종/산업분류</td>
+                        <td> 2022-04-10 </td>
+                        <td> 건설업/단독 주택 건설업/단독 주택 건설업(추가)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                사업장내역정보 변경(4대사회보험센터)
+              </h4>
+            </div>
+
+            <div class="section__body">
+              <div class="scroll-tbl-wrap mt10">
+                <div>
+                  <table class="list-table">
+                    <colgroup>
+                      <col width="15%">
+                      <col width="15%">
+                      <col width="13.5%">
+                      <col width="25%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th rowspan="2" colspan="2">변경항목</th>
+                        <th colspan="3">변경내역</th>
+                      </tr>
+                      <tr>
+                        <th>변경일</th>
+                        <th>변경전 내역</th>
+                        <th>변경후 내역</th>
+                      </tr>
+                      <tr>
+                        <th>사업장(사업주)변경</th>
+                        <th>우편수령지</th>
+                        <td>2022-05-22</td>
+                        <td>서울특별시 종로구 새문안로91, 40층
+                          401호(신문로1가, 고려빌딩)</td>
+                        <td>서울특별시 강남구 테헤란로25길 20,
+                          1513호 (역삼동, 역삼현대벤처텔)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                자동차등록정보 변경(국토교통부)
+              </h4>
+            </div>
+
+            <div class="section__body">
+              <table class="list-table mt10">
+                <colgroup>
+                  <col width="15%">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>변경항목</th>
+                    <th>변경내역</th>
+                  </tr>
+                  <tr>
+                    <td>자동차사용본거지</td>
+                    <td class="left">
+                      등록된 차량 정보 1건중 1건 신청
+                      <button class="btn-xm bg-black mr5">신청 차량 보기
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="com-agree-wrap">
+              <div class="info">
+                <p  style="text-align: center; font-size: 1.3rem; font-weight: bold;">자동차등록정보 변경 신청 후, 관할 차량등록관청에서 심사/승인이 완료되어야 <span class="c_red">“정부24자동차등록증 재발급”</span> 신청 가능합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                구비서류 첨부
+              </h4>
+              <h5>
+                ※ 자동차사용본거지 & 상호변경 서비스만 이용하는 경우 구비서류 필요없음
+              </h5>
+            </div>
+
+            <div class="section__body">
+              <table class="list-table mt10">
+                <colgroup>
+                  <col width="20%">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>구비서류목록</th>
+                    <th>파일첨부</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      접수 첨부파일
+                    </td>
+                    <td class="left">
+                      <div class="txt">
+                        <img src="../img/file-img.png" alt="파일">
+                        car_232323.jpg
+                      </div>
+                      <div class="txt">
+                        <img src="../img/file-img.png" alt="파일">
+                        car_232323.jpg
+                      </div>
+                      <div class="txt">
+                        <img src="../img/file-img.png" alt="파일">
+                        car_232323.jpg
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="btn-wrap mt10 flex-jc-e">
+            <button class="btn btn-lg bg-black mr5">이전</button>
+            <button class="btn btn-lg bg-black mr5">임시저장</button>
+            <button class="btn btn-lg bg-black mr5">다음</button>
+            <button class="btn btn-lg bg-main">신청 완료하기</button>
+          </div>
+
+          <div class="com-noti mt20">
+            <div class="com-noti__right">
+              <p>
+                · 임시저장이란? 일괄변경 신청 시(완료)버튼을 눌러 프로세스를 완료하지 않고, 보류하고자 할 때, 입력한 내용의 손실을 막기 위해 임시저장하는 기능입니다.
+              </p>
+              <p>
+                · (임시저장)한 내역은 (임시저장함)에서 확인하실 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+    <!-- content eee -->
+
+    <div data-include-path="footer.html"></div>
+
+    <script>
+
+      window.addEventListener('load', function () {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function (el) {
+          var includePath = el.dataset.includePath;
+          if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                el.outerHTML = this.responseText;
+              }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+          }
+        });
+      });
+
+    </script>
+
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+  </script>
+
+</body>
+
+</html>

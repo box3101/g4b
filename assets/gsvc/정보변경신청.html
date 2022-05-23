@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- common js -->
+  <script src="../js/common.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- header -->
+       <div class="headerWrap">
+  <div class="bgSub">
+    <div class="inner">
+      <div class="change-img">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="headerTop">
+    <div class="inner flex flex-al-center flex-jc-bt">
+      <div class="headerTop__left flex flex-al-center flex-jc-bt">
+        <div class="headerTop__left-txt">
+          <img src="../img/icon-login.png" alt="로그인 아이콘">
+          <p>
+            채관리(소속기관)님이 로그인 하셨습니다.
+          </p>
+        </div>
+        <div class="headerTop__left-state">
+          <button class="btn-mid bg-secondary radius-mid">기관담당자 시스템 전환</button>
+        </div>
+      </div>
+      <div class="headerTop__right">
+        <ul>
+          <li>
+            <a href="#">로그아웃</a>
+          </li>
+          <li>
+            <a href="회원정보수정.html">회원정보수정</a>
+          </li>
+          <li>
+            <a href="공지사항.html">고객센터</a>
+          </li>
+          <li>
+            <a href="#">
+              전체메뉴
+              <span>
+                <img src="../img/all-menu.png" alt="전체메뉴 아이콘">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="header" class="header">
+    <div class="inner">
+      <h1 class="header__logo">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="g4b기업지원플러스">
+        </a>
+      </h1>
+
+      <!-- gnb 메뉴 -->
+      <ul id="gnb">
+        <li>
+          <a href="이용안내.html" class="gnb_li">기업정보변경 </a>
+          <ul>
+            <li><a href="이용안내.html">이용안내</a></li>
+            <li><a href="정보변경신청01.html">정보변경 신청</a></li>
+            <li><a href="정보변경내역.html">정보변경 내역</a></li>
+            <li><a href="자동차비용납부.html">자동차 비용납부</a></li>
+            <li><a href="4대보험증명서.html">4대보험 증명서</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="신청발급이용안내.html" class="gnb_li">성적서 신청발급</a>
+          <ul>
+            <li><a href="신청발급이용안내.html">이용안내</a></li>
+            <li><a href="수요기관 연계.html">수요기관 연계</a></li>
+            <li><a href="성적서신청.html">성적서 신청</a></li>
+            <li><a href="성적서조회발급.html">성적서 조회발급</a></li>
+            <li><a href="성적서진위확인.html">성적서 진위확인</a></li>
+            <li><a href="발급기관조회.html">발급기관 조회</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="인증서신청발급이용안내.html" class="gnb_li">인증서 신청발급</a>
+          <ul>
+            <li><a href="인증서신청발급이용안내.html">이용안내</a></li>
+            <li><a href="인증심사신청.html">인증심사 신청</a></li>
+            <li><a href="인증서조회발급.html">인증서 조회발급</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="인정서신청발급이용안내.html" class="gnb_li">인정서 신청발급</a>
+          <ul>
+            <li><a href="인정서신청발급이용안내.html">이용안내</a></li>
+            <li><a href="인증심사신청.html">인정심사 신청</a></li>
+            <li><a href="인정서조회발급.html">인정서 조회발급</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="실적서이용안내.html" class="gnb_li">실적서 신청발급</a>
+          <ul>
+            <li><a href="실적서이용안내.html">이용안내</a></li>
+            <li><a href="협회회원등록.html">협회회원 등록</a></li>
+            <li><a href="실적신고등록.html">실적신고 등록</a></li>
+            <li><a href="실적신고내역.html">실적신고 내역</a></li>
+            <li><a href="실적서신청.html">실적서 신청</a></li>
+            <li><a href="실적서조회발급.html">실적서 조회발급</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div class="mo-header is-web-show">
+    <span class="open-mb-nav">
+      <span class="hamburger"></span>
+    </span>
+  </div>
+
+  <div class="mMenu is-web-show">
+    <span class="mclose"> <a href="#" class="closer"><img
+          src="https://www.incheon.go.kr/humanframe/theme/forty/assets/img/p_closes.png" alt="">
+      </a>
+    </span>
+    <ul class="mtitle">
+      <a href="#none">
+        <img src="../img/logo.png" alt="">
+      </a>
+    </ul>
+    <ul class="list">
+      <div class="navs" id="demo1">
+        <li><a href="#none">메뉴1</span></a>
+          <ul data-index="0">
+            <li>
+              <a href="#none">하위메뉴1</span></a>
+              <ul data-index="1">
+                <li>
+                  <a href="#none">하위메뉴 번째</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#none">하위메뉴2</a></li>
+            <li><a href="#none">하위메뉴3</a></li>
+          </ul>
+        </li>
+        <li><a href="#none">메뉴2</span></a>
+          <ul data-index="2">
+            <li><a href="#none">하위메뉴1</a></li>
+            <li><a href="#none">하위메뉴2</a></li>
+            <li><a href="#none">하위메뉴3</a></li>
+            <li><a href="#none">하위메뉴4</a></li>
+          </ul>
+        </li>
+        <li><a href="#none">메뉴3</a></li>
+      </div>
+    </ul>
+  </div>
+</div>
+    <!-- header eee-->
+
+    <!-- content -->
+    <div class="subContents">
+      <!-- 로케이션 -->
+      <div id="content-location" class="content-location">
+        <div class="content-location-inner">
+          <ul>
+            <li class="home">
+              <span>
+                <a href="#none">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#none">
+                  사업장 정보변경 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+            <li class="last">
+              <span>
+                <a href="#none">
+                  이용안내 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 로케이션 eee -->
+
+      <div class="inner">
+        <div class="subContents__header">
+          <div class="content-title-wrap">
+            <h3 class="content-title">
+              정보변경 신청</h3>
+          </div>
+          <div class="content-share-wrap">
+            <div class="btn-group">
+              <button type="button" class="btn-share">
+                <span>공유레이어열기</span>
+              </button>
+              <button type="button" class="btn-print">
+                <span>인쇄</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="subContents__info">
+          <button type="button" class="btn-lg radius-mid bg-black mt70" style="border-radius: 40px!important;
+          height: 2.3rem;
+          line-height: 1rem;"   >일괄변경처리현황 보기 ></button>
+
+          <ul class="com-step mt20">
+            <li class="com-step__list">
+              <div class="next-arr"></div>
+              <div class="com-step__item is-active">
+                <p class="tit">STEP 01</p>
+                <div class="img">
+                  <img src="../img/step01.png" alt="">
+                </div>
+                <p class="txt">
+                  변경항목 선택
+                </p>
+              </div>
+            </li>
+            <li class="com-step__list">
+              <div class="next-arr"></div>
+              <div class="com-step__item">
+                <p class="tit">STEP 02</p>
+                <div class="img">
+                  <img src="../img/step02.png" alt="">
+                </div>
+                <p class="txt">
+                  변경내역 입력
+                </p>
+              </div>
+            </li>
+            <li class="com-step__list">
+              <div class="next-arr"></div>
+              <div class="com-step__item">
+                <p class="tit">STEP 03</p>
+                <div class="img">
+                  <img src="../img/step03.png" alt="">
+                </div>
+                <p class="txt">
+                  구비서류 선택
+                </p>
+              </div>
+            </li>
+            <li class="com-step__list">
+              <div class="com-step__item">
+                <p class="tit">STEP 04</p>
+                <div class="img">
+                  <img src="../img/step04.png" alt="">
+                </div>
+                <p class="txt">
+                  변경내역 최종확인
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="com-noti">
+            <div class="com-noti__right">
+              <p>· 회원님의 현재 사업자 기준정보는 아래와 같습니다.
+              </p>
+              <p>· 변경항목을 선택하신 후 <다음>버튼을 눌러 변경내역 입력 단계로 진행해 주십시오
+              </p>
+              <p>
+                · 자동자변경등록 신청(국토교통부)은 오전9시부터 오후6시까지 신청이 가능합니다. (단, 등기변경 30일째인 경우 오후 4시까지 신청 가능)
+              </p>
+              <p>
+                · 법인 차량 주소 변경 시, 타시도 이전인 경우 또는 상호 변경인 경우 수수료(증지대) 또는 등록세가 발생합니다.
+                <br>
+                (증지대는 차량 심사완료 후 가상계좌발급을 통해 납부하셔야 하며, 통합가상계좌 발급 수수료, 지역관청 이체수수료, 교통안전공단 이용 수수료가 포합됩니다.
+                등록세는 신청 후 일괄변경진행 현황의 상세화면내에 링크된 위텍스를 통해 납부하실 수 있습니다.
+                <br>
+                &nbsp;&nbsp;- 타시도 변경인 경우, 증지대 발생 (예 : 서울시 → 경기도) <br>
+                &nbsp;&nbsp;- 통일시도내 변경인 경우, 증지대 없음 (예 : 서울시 → 서울시) <br>
+                &nbsp;&nbsp;- 상호 변경인 경우, 등록세 및 증지대 모두발생
+              </p>
+              <p>
+                · 등기변경 후 30일이 경과된 경우에는 조회 및 신청이 불가하오니 가까운 지자체 차량등록과(또는 차량등록사업소)에서 직접 신청하시기 바랍니다.
+              </p>
+              <p>
+                · 지점, 분사무소일 경우 인터넷 신청이 불가 합니다. (방문신청 처리 바랍니다.)
+              </p>
+              <p>
+                · 자동차등록증 발급은, 기업지원플러스 신청 및 변경완료 후 <span class="c_main">정부24 - 자동차등록증 </span>재교부 신청 또는 가까운 지자체 차량등록과(또는
+                차량등록사업소)를 이용하시기
+                바랍니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 사업자 기준정보 -->
+          <div class="section mt80">
+            <div class="section__header">
+              <h4>
+                사업자 기준정보
+              </h4>
+              <p class="noti c_black">
+                ※ 사업자 기준정보 <span class="c_main">(G4B회원정보)는 회원정보수정 메뉴에서도 변경 가능</span>합니다.
+              </p>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label for="a1">회사유형</label>
+                  </dt>
+                  <dd>
+                    법인사업자
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label >사업자번호</label>
+                  </dt>
+                  <dd>
+                    890-23-245522
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label for="a1">상호명</label>
+                  </dt>
+                  <dd>
+                    <input id="f1" type="text" class="form-input" placeholder="트렌드 와이어">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label >소재지<span class="c_red">*</span> </label>
+                  </dt>
+                  <dd class="flex-d-c">
+                    <div class="as-start">
+                      <input id="f1" type="text" class="form-input w25" placeholder="">
+                      <button class="btn-xm bg-black">주소검색</button>
+                    </div>
+                    <div style="width:100%">
+                      <input type="text" class="form-input mt5" placeholder="서울특별시 서초구 서초대로2
+                      ">
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <div class="form-group__row">
+                  <dl>
+                    <dt>
+                      <label >대표자성명</label>
+                    </dt>
+                    <dd>
+                      <input id="f1" type="text" class="form-input" placeholder="홍길동">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>
+                      <label >대표전화번호</label>
+                    </dt>
+                    <dd>
+                      <input id="f1" type="text" class="form-input" placeholder="070-4321-1234">
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label >휴대전화번호</label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <select id="f1" type="text" class="form-select w33 mr10" placeholder="010">
+                      <option value="010">010</option>
+                    </select>
+                    <input id="f1" type="text" class="form-input" placeholder="‘-’를 제외하고 입력하세요">
+                    <button type="button" class="w25 ml5 bg-main btn btn-lg">이용자 본인인증</button>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label >전자우편주소</label>
+                  </dt>
+                  <dd>
+                    <input id="f1" type="text" class="form-input" placeholder="asfdfd123@naver.com">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- 문자수신동의 -->
+          <div class="com-agree-wrap">
+            <div class="top">
+              <div class="form-wrap">
+                <div class="form-chkbox">
+                  <label class="form-chkbox__control control--checkbox">문자 수신 동의
+                    <input type="checkbox">
+                    <div class="form-chkbox__indicator"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              사업내용 일괄변경 처리 진행 및 결과는 (사업내용 일괄변경 > 일괄변경진행현황) 메뉴에서 확인 가능하며. 문자 알리미(SMS)로 처리 진행 및 결과 알림을 수신합니다.
+            </div>
+          </div>
+          <!-- 문자수신동의 eee-->
+
+          <div class="section">
+            <div class="section__header">
+              <h4>
+                조건선택
+              </h4>
+            </div>
+            <ul class="com-tit mt30">
+              <li>
+                <span class="bg">사업자유형 (법인번호를 입력하여 주십시오)</span>
+              </li>
+            </ul>
+            <div class="form-group mb10">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label for="a1">사업자유형</label>
+                  </dt>
+                  <dd>
+                    법인사업자
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label >법인등록번호</label>
+                  </dt>
+                  <dd class="mo-flex-d-c">
+                    <input id="f1" type="text" class="form-input" placeholder="‘-’를 제외하고 입력하세요">
+                    <span class="ml5 mr5">-</span>
+                    <input id="f1" type="text" class="form-input" placeholder="‘-’를 제외하고 입력하세요">
+                    <button type="button" class="w25 ml5 bg-main btn btn-lg">법인번호검증</button>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <li class="txt">
+              <div class="mt0" style="color: darkred;">※ (필수)신청 전에 법인등기 변경이 선행되어야 합니다.</div>
+            </li>
+          </div>
+
+          <div class="section">
+            <ul class="com-tit mt5">
+              <li>
+                <span class="bg">변경항목 선택 (변경할 항목을 선택하여 주십시오)</span>
+              </li>
+            </ul>
+            <div class="form-group mb10">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label for="a1">사업자유형</label>
+                  </dt>
+                  <dd>
+                    법인사업자
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label >법인등록번호</label>
+                  </dt>
+                  <dd>
+                    <div class="form-wrap">
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">상호
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                        <label class="form-chkbox__control control--checkbox"> 소재지
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                        <label class="form-chkbox__control control--checkbox"> 업종
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <li class="txt">
+              <div class="mt0" style="color: darkred;">※ 대표자성명을 G4B에서 변경 신고 할 수 없습니다..</div>
+            </li>
+          </div>
+
+          <div class="com-agree-wrap mt30">
+            <div class="top">
+              <div class="form-wrap">
+                <div class="form-chkbox">
+                  <label class="form-chkbox__control control--checkbox">행정정보 공동이용 동의서
+                    <input type="checkbox">
+                    <div class="form-chkbox__indicator"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              본인은 이 건 업무처리와 관련하여 담당 직원이 <전자정부법> 제 36조 제2항에 따른 행정정보의 공동이용을 통하여 사업자등록증, 주민등록등본의 행정정보를 확인하는 것에 동의합니다. <br>
+                * 동의하지 않는 경우에는 신청인이 직접 관련 서류를 제출해야 합니다.
+            </div>
+          </div>
+
+          <div class="board-btn-wrap ac">
+            <button class="btn btn-lg bg-main radius-mid" title="다음">다음</button>
+            <button class="btn btn-lg bg-black radius-mid" title="취소">취소</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- content eee -->
+
+   <div data-include-path="footer.html"></div>
+ 
+    <script>
+ 
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+ 
+    </script>
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+  </script>
+
+</body>
+
+</html>

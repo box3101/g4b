@@ -1,0 +1,31 @@
+/*---------------------------- COLOR ----------------------------*/
+$main-color: #641e92;
+$secondary-color: #FF7E00;
+$blue: #005DE2;
+$green: #00A36A;
+$gray: #ccc;
+$black : #363636;
+$accent-color: #FF6347;
+$accent-color-name: '$accent-color';
+
+/*---------------------------- 반응형 ----------------------------*/
+$b-web: 1200px;
+$b-tab: 900px;
+$b-mo: 600px;
+
+$zIndex-set: (
+  popup: 100,
+  fixed: 20,
+  header: 10,
+  double: 2,
+  default: 1,
+  zero: 0,
+  minus: -1,
+);
+
+$path-set: (
+  icon: "../img/icon/",
+  img: "../img/",
+  logo: "../img/logo/",
+  object: "../img/object/",
+);

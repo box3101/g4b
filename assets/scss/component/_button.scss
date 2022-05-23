@@ -1,0 +1,156 @@
+/* =================== BUTTON =================== */
+button{
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  border-radius: 0.3125rem;
+  &:hover{ 
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    // transform: translateY(-0.15em);
+  }
+}
+
+.btn-wrap.tac{
+  text-align: center;
+}
+
+.btn {
+  // background: #5f8ee4;
+  border: none;
+  // border-radius: 0.4em;
+  box-shadow: none;
+  cursor: pointer;
+  // font: 17.6px "Open Sans", Arial, sans-serif;
+  color: #ffffff;
+}
+
+$btn-colors: (
+  bg-default: (
+    bg-color: transparent,
+    color:#333,
+    border:#333,
+  ),
+  bg-main: (
+    bg-color:$main-color
+  ),
+  bg-black:(
+    bg-color:$black
+  ),
+  bg-secondary:(
+    bg-color: $secondary-color
+  ),
+  bg-sky:(
+    bg-color: #0CC4CF,
+  ),
+  bg-red:(
+    bg-color: #E21518,
+  ),
+  bg-f:(
+    bg-color : #fff,
+    color:#333,
+    border:none,
+  ),
+);
+
+@each $key, $value in $btn-colors {
+  .#{$key} {
+    background-color: map-get($value, bg-color);
+    color: map-get($value, color)!important;
+    border: 1px solid map-get($value, border)!important;
+    position: relative;
+
+    --hover : #{adjust-hue(map-get($value, bg-color), 0deg)};
+  
+  }
+}
+
+$btn-sizes: (
+  btn-xsm:(
+    padding: 0rem 1.1rem,
+    font-size: 1.0625rem,
+    h: 1.875rem,
+    font-w : 400,
+  ),
+  btn-xm:(
+    padding: 0.625rem 1.2rem,
+    font-size: 1rem,
+    font-w : bold,
+  ),
+  btn-sm: (
+    padding:0.5rem 0.9375rem,
+    font-size: 1rem,
+    font-w : bold,
+  ),
+  btn-mid: (
+    padding: 0.15rem 0.9375rem,
+    font-size:1rem,
+    font-w : bold,
+  ),
+  btn-lg: (
+    padding: 0.625rem 2.3rem,
+    font-size: 1.1rem,
+    font-w : bold,
+    // h: 2.75rem,
+  ),
+);
+
+@each $key, $value in $btn-sizes {
+  .#{$key} {
+    display: inline-block;
+    padding: map-get($value, padding);
+    font-size: map-get($value, font-size);
+    font-weight: map-get($value, font-w);
+    align-self: map-get($value, align-self);
+    height: map-get($value, h)!important;
+    border-radius: map-get($value, radius);
+    align-items: center;
+    color: #fff;
+    flex-shrink: 0;
+  }
+}
+
+$btn-radius: (
+  radius-sm: (
+    radius: 10px,
+  ),
+  radius-mid: (
+    radius: 15px,
+  ),
+  radius-lg: (
+    radius: 20px,
+  ),
+);
+
+@each $key, $value in $btn-radius {
+  .#{$key} {
+    border-radius: map-get($value, radius);
+  }
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: .0625rem solid #5f8ee4;
+  color: #333!important;
+}
+
+.btn.btn-disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media (max-width:600px){
+  .btn-lg{
+    padding: 0.625rem 1.2rem;
+  }
+}
+//////////////////////////////////// //BUTTON TYPE ////////////////////////////////////
+
+.btn-xsm{
+  line-height: 1.875rem;
+  &.bd{
+    border: 1px solid $main-color;
+    color: $main-color; font-weight: 600;
+    border-radius: 5px; display: block;
+    width: 8rem; margin-bottom: 9px;
+    
+  }
+}

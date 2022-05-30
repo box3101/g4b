@@ -20,18 +20,40 @@ function bindingEventSub() {
   // 탭
   comTab();
 
-  
+  // 상단 맨위로
+  goTop();
+
 }
 
 function subPanel() {
   $(".content-location .content-location-inner > ul > li").on("click", function () {
 
-    $(".site_panel").hide();
+    const $this = $(this);
+    const sitePanel = $(".site_panel");
+    const sitePanelValue = $(this).find(sitePanel).hasClass("is-active");
+
     $(".content-location .content-location-inner > ul > li:nth-of-type(2)").find("i").attr("class", "fa-solid fa-angle-down ml5");
     $(".content-location .content-location-inner > ul > li:nth-of-type(3)").find("i").attr("class", "fa-solid fa-angle-down ml5");
 
-    $(this).find(".site_panel").show();
-    $(this).find("i").attr("class", "fa-solid fa-angle-up ml5")
+
+    if(!sitePanelValue){
+      active($this);
+    }else{
+      thisClick($this);
+    }
+
+    function active($this) {
+      $(".site_panel").removeClass("is-active");
+      $this.find(".site_panel").addClass("is-active");
+      $this.find("i").attr("class", "fa-solid fa-angle-up ml5");
+    }
+
+    function thisClick($this) {
+      $this.find(".site_panel").removeClass("is-active");
+      $this.find("i").attr("class", "fa-solid fa-angle-down ml5");
+    }
+
+    // if($(this))
   });
 }
 
@@ -92,5 +114,11 @@ function comTab() {
     tabCnt.hide();
     $(currentValue).show();
   }
-
 };
+
+function goTop() {
+  $(".go-top > a").click(function () {
+    $('html, body').stop().animate({ scrollTop: 0 }, 400);
+    return false;
+  });
+}

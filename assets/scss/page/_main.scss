@@ -116,7 +116,7 @@
     .notice{
       width: 100%;
       &__tit-wrap{
-        border-bottom: 0.0625rem dotted #aaa;padding-bottom: 0.5625rem;margin-bottom: 0.625rem;
+        border-bottom: 1px dotted #aaa;padding-bottom: 0.5625rem;margin-bottom: 0.625rem;
       }
       &__tit{
         font-size: 1.25rem;font-weight: 600;color: #000;position: relative;top: 0.25rem;
@@ -264,7 +264,7 @@
  .mainContent__right .row:first-of-type{display: none;}
  .mainContent__right .row{padding: 27px 13px;}
  .mainContent__right .callCenter__tit {font-size: 18px;font-weight: 500;margin-bottom: 16px;}
- .mainContent__right .util__tit{margin-top: -0.0625rem;font-weight: bold;font-size: 16px;}
+ .mainContent__right .util__tit{margin-top: -1px;font-weight: bold;font-size: 16px;}
  .mainContent__right .row.bg-none{margin-bottom: 0;}
  .mainContent__left .swiper-container .banner__btn-wrap{width: 100%;}
  .form-group__row dl dt label {font-size: 1rem;text-align: center;word-break: keep-all;}

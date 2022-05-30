@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- common js -->
+  <script src="../js/common.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- header -->
+    <div class="headerWrap">
+      <div class="bgSub">
+        <div class="inner">
+          <div class="change-img">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="headerTop">
+        <div class="inner flex flex-al-center flex-jc-bt">
+          <div class="headerTop__left flex flex-al-center flex-jc-bt">
+            <div class="headerTop__left-txt">
+              <img src="../img/icon-login.png" alt="로그인 아이콘">
+              <p>
+                기관담당자 (채관리)님이 로그인 하셨습니다.
+              </p>
+            </div>
+            <div class="headerTop__left-state">
+              <button class="btn-mid bg-secondary radius-mid">기관담당자 시스템 전환</button>
+            </div>
+          </div>
+          <div class="headerTop__right">
+            <ul>
+              <li>
+                <a href="#">로그아웃</a>
+              </li>
+              <li>
+                <a href="../gsvc/회원정보수정.html">회원정보수정</a>
+              </li>
+              <li>
+                <a href="../gsvc/공지사항.html">고객센터</a>
+              </li>
+              <li>
+                <a href="#">
+                  전체메뉴
+                  <span>
+                    <img src="../img/all-menu.png" alt="전체메뉴 아이콘">
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="header">
+        <div class="inner">
+          <h1 class="header__logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="g4b기업지원플러스">
+            </a>
+          </h1>
+
+          <!-- gnb 메뉴 -->
+          <ul id="gnb">
+            <li>
+              <a href="../gsvc/이용안내.html" class="gnb_li">기업 정보변경 </a>
+              <ul>
+                <li><a href="../gsvc/이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/정보변경신청.html">정보변경 신청</a></li>
+                <li><a href="../gsvc/정보변경내역.html">정보변경 내역</a></li>
+                <li><a href="../gsvc/자동차비용납부.html">자동차 비용납부</a></li>
+                <li><a href="../gsvc/4대보험증명서발급.html">4대사회보험 증명서 발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/신청발급이용안내.html" class="gnb_li">성적서 신청·발급</a>
+              <ul>
+                <li><a href="../gsvc/신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/수요기관연계.html">수요기관 연계</a></li>
+                <li><a href="../gsvc/성적서신청.html">성적서 신청</a></li>
+                <li><a href="../gsvc/성적서조회발급.html">성적서 조회발급</a></li>
+                <li><a href="../gsvc/성적서진위확인.html">성적서 진위확인</a></li>
+                <li><a href="../gsvc/발급기관조회.html">발급기관 조회</a></li>
+                <li><a href="../gsvc/발급기관등록.html">발급기관 등록</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인증서신청발급이용안내.html" class="gnb_li">인증서 신청·발급</a>
+              <ul>
+                <li><a href="../gsvc/인증서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인증심사 신청</a></li>
+                <li><a href="../gsvc/인증서조회발급.html">인증서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/실적증명서이용안내.html" class="gnb_li">실적증명서 발급</a>
+              <ul>
+                <li><a href="../gsvc/실적증명서이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인정심사신청.html">인정심사 신청</a></li>
+                <li><a href="../gsvc/인정서조회발급.html">인정서 조회발급</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../gsvc/실적서이용안내.html" class="gnb_li">실적서 신청·발급</a>
+              <ul>
+                <li><a href="../gsvc/실적서이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/협회회원등록.html">협회회원 등록</a></li>
+                <li><a href="../gsvc/실적신고등록.html">실적신고 등록</a></li>
+                <li><a href="../gsvc/실적신고내역.html">실적신고 내역</a></li>
+                <li><a href="../gsvc/실적서신청.html">실적서 신청</a></li>
+                <li><a href="../gsvc/실적서조회발급.html">실적서 조회발급</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div class="mo-header is-web-show">
+        <span class="open-mb-nav">
+          <span class="hamburger"></span>
+        </span>
+      </div>
+
+      <div class="mMenu is-web-show">
+        <span class="mclose"> <a href="#" class="closer"><img
+              src="https://www.incheon.go.kr/humanframe/theme/forty/assets/img/p_closes.png" alt="">
+          </a>
+        </span>
+        <ul class="mtitle">
+          <a href="#none">
+            <img src="../img/logo.png" alt="">
+          </a>
+        </ul>
+        <ul class="list">
+          <div class="navs" id="demo1">
+            <li><a href="#none">메뉴1</span></a>
+              <ul data-index="0">
+                <li>
+                  <a href="#none">하위메뉴1</span></a>
+                  <ul data-index="1">
+                    <li>
+                      <a href="#none">하위메뉴 번째</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴2</span></a>
+              <ul data-index="2">
+                <li><a href="#none">하위메뉴1</a></li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+                <li><a href="#none">하위메뉴4</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴3</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- header eee-->
+
+    <!-- content -->
+    <div class="subContents">
+      <!-- 로케이션 -->
+      <div id="content-location" class="content-location">
+        <div class="content-location-inner">
+          <ul>
+            <li class="home">
+              <span>
+                <a href="#none">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#none">
+                  사업장 정보변경 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+            <li class="last">
+              <span>
+                <a href="#none">
+                  나의상담내역 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="../gsvc/나의G4B.html" class="site_title">나의 G4B </a>
+                      <a href="../gsvc/나의상담내역.html" class="site_title">나의상담내역</a>
+                      <a href="../gsvc/회원정보수정.html" class="site_title">회원정보수정
+                      </a>
+                      <a href="../gsvc/회원탈퇴.html" class="site_title">회원탈퇴</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 로케이션 eee -->
+
+      <div class="inner">
+        <div class="subContents__header">
+          <div class="content-title-wrap">
+            <h3 class="content-title">
+              회원정보수정</h3>
+          </div>
+        </div>
+
+        <div class="subContents__info">
+
+          <!-- 회원정보 -->
+          <div class="section bd">
+            <div class="section__header">
+              <h4>회원정보</h4>
+            </div>
+            <div class="section__body">
+              <div class="form-group">
+                <div class="form-group__row">
+                  <dl>
+                    <dt>아이디</dt>
+                    <dd class="mo-flex-d-c">
+                      box3101 (가입일:2022-04-13)
+                      <button class="btn-xm bg-black ml5">비밀번호 변경</button>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>이름</dt>
+                    <dd class="flex-mo-fd">
+                      <input type="text" class="form-input w50" placeholder="노준철">
+                      <button class="btn-xm bg-black ml5 mr5">이름변경 신청</button>
+                      <p><span class="c_red">!</span> 개명으로 이름이 변경된 경우에 한하여 변경이 가능합니다.</p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>생년월일</dt>
+                    <dd>1972년01월05일</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt><label>연락처(휴대폰번호) <span class="c_red">*</span></label></dt>
+                    <dd>010-2323-23233</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>이메일 <span class="c_red">*</span> </dt>
+                    <dd>
+                      <input type="text" class="form-input w50" placeholder="box4011@nate.com">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>
+                      <label>부가 전화번호 서비스</span>
+                      </label>
+                    </dt>
+                    <dd class="mo-flex-d-c flex-al-center">
+                      <span class="mr5">(일반전화)</span>
+                      <select type="text" class="form-select w33" placeholder="010">
+                        <option value="010">010</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>
+                      <label>부가 전화번호 서비스</span>
+                      </label>
+                    </dt>
+                    <dd class="mo-flex-d-c flex-al-center">
+                      <span class="mr5">(팩스전화)</span>
+                      <select type="text" class="form-select w33" placeholder="010">
+                        <option value="010">010</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 사업장 기본정보 -->
+          <div class="section bd">
+            <div class="section__header">
+              <h4>사업장 기본정보</h4>
+            </div>
+            <div class="section__body">
+              <div class="form-group">
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>회원 구분</dt>
+                    <dd>법인기업</dd>
+                  </dl>
+                  <dl>
+                    <dt>법인등록번호</dt>
+                    <dd>133123-2323232</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>132-32-323412</dd>
+                  </dl>
+                  <dl>
+                    <dt>회사명</dt>
+                    <dd>회사명</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>대표 전화번호</dt>
+                    <dd class="mo-flex-d-c flex-al-center">
+                      <select type="text" class="form-select w33" placeholder="010">
+                        <option value="010">010</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>회사 팩스번호</dt>
+                    <dd class="mo-flex-d-c flex-al-center">
+                      <select type="text" class="form-select w33" placeholder="010">
+                        <option value="010">010</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>대표이사</dt>
+                    <dd>
+                      <input type="text" class="form-input mr10" placeholder="노준철">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>개업일</dt>
+                    <dd>
+                      <input type="text" class="form-input w25 form-date datePicker" placeholder="2022-05-17">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>사업장 주소</dt>
+                    <dd>
+                      <div class="flex flex-mo-fd">
+                        <button class="btn-xm bg-black mr5">주소검색</button>
+                        <input type="text" class="form-input w50 mr5" placeholder="경기도 군포시 금포로">
+                        <input type="text" class="form-input w50 mr10" placeholder="4층 4호
+                        ">
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>업종</dt>
+                    <dd>
+                      <select name="" id="" class="form-select mr10">
+                        <option value="">조재업</option>
+                      </select>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>소재지</dt>
+                    <dd>
+                      <select name="" id="" class="form-select mr10">
+                        <option value="">서울특별시</option>
+                      </select>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- G4B 이용자 정보 -->
+          <div class="section bd">
+            <div class="section__header">
+              <h4>G4B 이용자 정보</h4>
+            </div>
+            <div class="section__body">
+              <div class="form-group">
+                <div class="form-group__row">
+                  <dl>
+                    <dt>
+                      <label for="">담당자 성명</label>
+                    <dd>
+                      <input type="text" class="form-input w50" placeholder="테스트_일반사업자">
+                    </dd>
+                    </dt>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>
+                      <label for="">휴대 전화번호</label>
+                    <dd class="mo-flex-d-c flex-al-center">
+                      <select type="text" class="form-select w33" placeholder="010">
+                        <option value="010">010</option>
+                      </select>
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                      &nbsp;-&nbsp;
+                      <input type="text" class="form-input w33">
+                    </dd>
+                    </dt>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <label for="">메일 수신여부</label>
+                    <dd>
+                      <div class="radio-wrap">
+                        <div class="form-radio">
+                          <input type="radio" name="radio2" id="a1">
+                          <label for="a1">
+                            <span>수신</span>
+                          </label>
+                        </div>
+                        <div class="form-radio mr5">
+                          <input type="radio" name="radio2" id="a2">
+                          <label for="a2">
+                            <span>비수신</span>
+                          </label>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>
+                      <label for="">전자우편 주소</label>
+                    <dd>
+                      <input type="text" class="form-input mr10" placeholder="bopx4101@nate.com">
+                    </dd>
+                    </dt>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <label for="">SMS 수신여부</label>
+                    <dd>
+                      <div class="radio-wrap">
+                        <div class="form-radio">
+                          <input type="radio" name="radio2" id="a1">
+                          <label for="a1">
+                            <span>수신</span>
+                          </label>
+                        </div>
+                        <div class="form-radio mr5">
+                          <input type="radio" name="radio2" id="a2">
+                          <label for="a2">
+                            <span>비수신</span>
+                          </label>
+                        </div>
+                      </div>
+                    </dd>
+                    </dt>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-btn-wrap ac">
+            <a href="#
+          " class="btn btn-lg bg-main radius-mid" title="수정">수정</a>
+            <a href="회원정보수정-view.html" class="btn btn-lg bg-black radius-mid" title="취소">취소</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!-- content eee -->
+
+    <div data-include-path="footer.html"></div>
+
+    <script>
+
+      window.addEventListener('load', function () {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function (el) {
+          var includePath = el.dataset.includePath;
+          if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                el.outerHTML = this.responseText;
+              }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+          }
+        });
+      });
+
+    </script>
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+  </script>
+
+</body>
+
+</html>

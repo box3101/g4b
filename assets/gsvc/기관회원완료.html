@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- common js -->
+  <script src="../js/common.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- header -->
+    <div class="headerWrap">
+      <div class="bgSub">
+        <div class="inner">
+          <div class="change-img">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="headerTop">
+        <div class="inner flex flex-al-center flex-jc-bt">
+          <div class="headerTop__left flex flex-al-center flex-jc-bt">
+            <div class="headerTop__left-txt">
+              <img src="../img/icon-login.png" alt="로그인 아이콘">
+              <p>
+                기관담당자 (채관리)님이 로그인 하셨습니다.
+              </p>
+            </div>
+            <div class="headerTop__left-state">
+              <button class="btn-mid bg-secondary radius-mid">기관담당자 시스템 전환</button>
+            </div>
+          </div>
+          <div class="headerTop__right">
+            <ul>
+              <li>
+                <a href="#">로그아웃</a>
+              </li>
+              <li>
+                <a href="회원가입.html">회원가입</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+              <li>
+                <a href="#">
+                  전체메뉴
+                  <span>
+                    <img src="../img/all-menu.png" alt="전체메뉴 아이콘">
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="header">
+        <div class="inner">
+          <h1 class="header__logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="g4b기업지원플러스">
+            </a>
+          </h1>
+
+          <!-- gnb 메뉴 -->
+          <ul id="gnb">
+            <li>
+              <a href="../gsvc/이용안내.html" class="gnb_li">사업장 정보변경 </a>
+              <ul>
+                <li><a href="../gsvc/이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/정보변경신청01.html">정보변경 신청</a></li>
+                <li><a href="../gsvc/정보변경내역.html">정보변경 내역</a></li>
+                <li><a href="../gsvc/자동차비용납부.html">자동차 비용납부</a></li>
+                <li><a href="../gsvc/4대보험증명서.html">4대보험 증명서</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/신청발급이용안내.html" class="gnb_li">성적서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/수요기관연계.html">수요기관 연계</a></li>
+                <li><a href="../gsvc/성적서신청.html">성적서 신청</a></li>
+                <li><a href="../gsvc/성적서조회발급.html">성적서 조회발급</a></li>
+                <li><a href="../gsvc/성적서진위확인.html">성적서 진위확인</a></li>
+                <li><a href="../gsvc/발급기관조회.html">발급기관 조회</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인증서신청발급이용안내.html" class="gnb_li">인증서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인증서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인증심사 신청</a></li>
+                <li><a href="../gsvc/인증서조회발급.html">인증서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인정서신청발급이용안내.html" class="gnb_li">인정서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인정서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인정심사 신청</a></li>
+                <li><a href="../gsvc/인정서조회발급.html">인정서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="gnb_li">실적서 신청발급</a>
+              <ul>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">협회회원 등록</a></li>
+                <li><a href="#">실적신고 등록</a></li>
+                <li><a href="#">실적신고 내역</a></li>
+                <li><a href="#">실적서 신청</a></li>
+                <li><a href="#">실적서 조회발급</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div class="mo-header is-web-show">
+        <span class="open-mb-nav">
+          <span class="hamburger"></span>
+        </span>
+      </div>
+
+      <div class="mMenu is-web-show">
+        <span class="mclose"> <a href="#" class="closer"><img
+              src="https://www.incheon.go.kr/humanframe/theme/forty/assets/img/p_closes.png" alt="">
+          </a>
+        </span>
+        <ul class="mtitle">
+          <a href="#none">
+            <img src="../img/logo.png" alt="">
+          </a>
+        </ul>
+        <ul class="list">
+          <div class="navs" id="demo1">
+            <li><a href="#none">메뉴1</span></a>
+              <ul data-index="0">
+                <li>
+                  <a href="#none">하위메뉴1</span></a>
+                  <ul data-index="1">
+                    <li>
+                      <a href="#none">하위메뉴 번째</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴2</span></a>
+              <ul data-index="2">
+                <li><a href="#none">하위메뉴1</a></li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+                <li><a href="#none">하위메뉴4</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴3</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- header eee-->
+
+    <!-- content -->
+    <div class="subContents">
+      <!-- 로케이션 -->
+      <div id="content-location" class="content-location">
+        <div class="content-location-inner">
+          <ul>
+            <li class="home">
+              <span>
+                <a href="#none">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#none">
+                  회원서비스 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+            <li class="last">
+              <span>
+                <a href="#none">
+                  회원가입 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="회원가입" class="site_title">회원가입</a>
+                      <a href="" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 로케이션 eee -->
+
+      <div class="inner">
+        <div class="subContents__header">
+          <div class="content-title-wrap">
+            <h3 class="content-title">
+              회원가입</h3>
+          </div>
+          <div class="content-share-wrap">
+            <div class="btn-group">
+              <button type="button" class="btn-share">
+                <span>공유레이어열기</span>
+              </button>
+              <button type="button" class="btn-print">
+                <span>인쇄</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="subContents__info">
+
+          <div class="step-list-wrap steps5">
+            <ol>
+              <li><span><strong>01.</strong> 유형 선택</span></li>
+              <li><span><strong>02.</strong> 약관동의</span></li>
+              <li><span><strong>03.</strong> 정보입력</span></li>
+              <li class="active" aria-current="page"><span><strong>04.</strong> 가입완료</span></li>
+            </ol>
+          </div>
+
+          <div class="com-agree-wrap">
+            <div class="info" style="text-align: center">
+              <p class="c_main" style="text-align: center; font-size: 2rem; font-weight: bold;">G4B 회원가입이 완료되었습니다.
+              </p>
+              <p>
+                하단의 회원정보를 확인하시고, 로그인 후, 서비스를 이용해주세요.
+              </p>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                회원정보 입력
+              </h4>
+            </div>
+            <div class="section__body">
+              <div class="form-group">
+                <div class="form-group__row">
+                  <dl>
+                    <dt>아이디</dt>
+                    <dd>box3101</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>
+                      <label for="">성명</label>
+                    </dt>
+                    <dd>홍길동</dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <label for="홍">회원구분</label>
+                    </dt>
+                    <dd>기관회원</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>
+                      <label for="">휴대전화번호</label>
+                    </dt>
+                    <dd>010-2323-2323</dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <label for="">전자우편 주소</label>
+                    </dt>
+                    <dd>test@asdsad</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>주소란</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>
+                      <label for="">메일 수신여부</label>
+                    </dt>
+                    <dd>수신</dd>
+                  </dl>
+                  <dl>
+                    <dt>
+                      <label for="">SMS 수신여부</label>
+                    </dt>
+                    <dd>비수신</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>발급 기관</dt>
+                    <dd>신규 기관등록</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                G4B 이용자 정보
+              </h4>
+            </div>
+            <div class="section__body">
+              <div class="form-group">
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>시험·검사기관명</dt>
+                    <dd>아사달</dd>
+                  </dl>
+                  <dl>
+                    <dt>기업 영문ID(약어)</dt>
+                    <dd>ASADS-ASDSAD</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>사업자등록번호 </dt>
+                    <dd>000-00-00000</dd>
+                  </dl>
+                  <dl>
+                    <dt>대표자명</dt>
+                    <dd>아사달</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>홈페이지 주소</dt>
+                    <dd>주소내용</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>주소내용</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>대표 전화번호</dt>
+                    <dd>02-2323-2323</dd>
+                  </dl>
+                  <dl>
+                    <dt>회사 팩스번호</dt>
+                    <dd>02-2323-2323</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>기관소개</dt>
+                    <dd>기관소개 텍스트</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt> 신청서 양식<span class="c_red">*</span></dt>
+                    <dd>G4B 시험·인증·실적 서비스 이용기관 신청서.PDF
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>기관 유형<span class="c_red">*</span></dt>
+                    <dd>시험</dd>
+                  </dl>
+                  <dl>
+                    <dt>G4v 이용방식<span class="c_red">*</span></dt>
+                    <dd>파일발급</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>성적서 제공 수요처</dt>
+                    <dd>환경기술평가원</dd>
+                  </dl>
+                  <dl>
+                    <dt>조달청연계 동의여부</dt>
+                    <dd>동의</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>KOLAS 인정여부</dt>
+                    <dd>미인정</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row flex-w50">
+                  <dl>
+                    <dt>KOLAS 인정분류</dt>
+                    <dd>내용</dd>
+                  </dl>
+                  <dl>
+                    <dt>KOLAS 인전번호</dt>
+                    <dd></dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>기관로고</dt>
+                    <dd>로고.PNG</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>기관직인</dt>
+                    <dd>직인.png</dd>
+                  </dl>
+                </div>
+                <div class="form-group__row">
+                  <dl>
+                    <dt>동의확인서</dt>
+                    <dd>조달청.pdf</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="board-btn-wrap ac">
+        <a href="정보변경신청03.html
+      " class="btn btn-lg bg-main radius-mid" title="로그인화면 이동">로그인화면 이동</a>
+        <a class="btn btn-lg bg-black radius-mid" title="메인화면 이동">메인화면 이동</a>
+      </div>
+
+    </div>
+    <!-- content eee -->
+
+    <div data-include-path="footer.html"></div>
+
+    <script>
+
+      window.addEventListener('load', function () {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function (el) {
+          var includePath = el.dataset.includePath;
+          if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                el.outerHTML = this.responseText;
+              }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+          }
+        });
+      });
+
+    </script>
+
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+  </script>
+
+</body>
+
+</html>

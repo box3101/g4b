@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+
+  <!-- =================== LINK =================== -->
+  <!-- NanumSquare css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- common js -->
+  <script src="../js/common.js"></script>
+
+  <title>기업지원플러스 G4B</title>
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="G4B">
+
+    <!-- header -->
+    <div class="headerWrap">
+      <div class="bgSub">
+        <div class="inner">
+          <div class="change-img">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="headerTop">
+        <div class="inner flex flex-al-center flex-jc-bt">
+          <div class="headerTop__left flex flex-al-center flex-jc-bt">
+            <div class="headerTop__left-txt">
+              <img src="../img/icon-login.png" alt="로그인 아이콘">
+              <p>
+                기관담당자 (채관리)님이 로그인 하셨습니다.
+              </p>
+            </div>
+            <div class="headerTop__left-state">
+              <button class="btn-mid bg-secondary radius-mid">기관담당자 시스템 전환</button>
+            </div>
+          </div>
+          <div class="headerTop__right">
+            <ul>
+              <li>
+                <a href="#">로그아웃</a>
+              </li>
+              <li>
+                <a href="회원가입.html">회원가입</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+              <li>
+                <a href="#">
+                  전체메뉴
+                  <span>
+                    <img src="../img/all-menu.png" alt="전체메뉴 아이콘">
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header" class="header">
+        <div class="inner">
+          <h1 class="header__logo">
+            <a href="../index.html">
+              <img src="../img/logo.png" alt="g4b기업지원플러스">
+            </a>
+          </h1>
+
+          <!-- gnb 메뉴 -->
+          <ul id="gnb">
+            <li>
+              <a href="../gsvc/이용안내.html" class="gnb_li">사업장 정보변경 </a>
+              <ul>
+                <li><a href="../gsvc/이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/정보변경신청01.html">정보변경 신청</a></li>
+                <li><a href="../gsvc/정보변경내역.html">정보변경 내역</a></li>
+                <li><a href="../gsvc/자동차비용납부.html">자동차 비용납부</a></li>
+                <li><a href="../gsvc/4대보험증명서.html">4대보험 증명서</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/신청발급이용안내.html" class="gnb_li">성적서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/수요기관연계.html">수요기관 연계</a></li>
+                <li><a href="../gsvc/성적서신청.html">성적서 신청</a></li>
+                <li><a href="../gsvc/성적서조회발급.html">성적서 조회발급</a></li>
+                <li><a href="../gsvc/성적서진위확인.html">성적서 진위확인</a></li>
+                <li><a href="../gsvc/발급기관조회.html">발급기관 조회</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인증서신청발급이용안내.html" class="gnb_li">인증서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인증서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인증심사 신청</a></li>
+                <li><a href="../gsvc/인증서조회발급.html">인증서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="../gsvc/인정서신청발급이용안내.html" class="gnb_li">인정서 신청발급</a>
+              <ul>
+                <li><a href="../gsvc/인정서신청발급이용안내.html">이용안내</a></li>
+                <li><a href="../gsvc/인증심사신청.html">인정심사 신청</a></li>
+                <li><a href="../gsvc/인정서조회발급.html">인정서 조회발급</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="gnb_li">실적서 신청발급</a>
+              <ul>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">협회회원 등록</a></li>
+                <li><a href="#">실적신고 등록</a></li>
+                <li><a href="#">실적신고 내역</a></li>
+                <li><a href="#">실적서 신청</a></li>
+                <li><a href="#">실적서 조회발급</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div class="mo-header is-web-show">
+        <span class="open-mb-nav">
+          <span class="hamburger"></span>
+        </span>
+      </div>
+
+      <div class="mMenu is-web-show">
+        <span class="mclose"> <a href="#" class="closer"><img
+              src="https://www.incheon.go.kr/humanframe/theme/forty/assets/img/p_closes.png" alt="">
+          </a>
+        </span>
+        <ul class="mtitle">
+          <a href="#none">
+            <img src="../img/logo.png" alt="">
+          </a>
+        </ul>
+        <ul class="list">
+          <div class="navs" id="demo1">
+            <li><a href="#none">메뉴1</span></a>
+              <ul data-index="0">
+                <li>
+                  <a href="#none">하위메뉴1</span></a>
+                  <ul data-index="1">
+                    <li>
+                      <a href="#none">하위메뉴 번째</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴2</span></a>
+              <ul data-index="2">
+                <li><a href="#none">하위메뉴1</a></li>
+                <li><a href="#none">하위메뉴2</a></li>
+                <li><a href="#none">하위메뉴3</a></li>
+                <li><a href="#none">하위메뉴4</a></li>
+              </ul>
+            </li>
+            <li><a href="#none">메뉴3</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <!-- header eee-->
+
+    <!-- content -->
+    <div class="subContents">
+      <!-- 로케이션 -->
+      <div id="content-location" class="content-location">
+        <div class="content-location-inner">
+          <ul>
+            <li class="home">
+              <span>
+                <a href="#none">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#none">
+                  회원서비스 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="#" class="site_title">사업장 정보변경</a>
+                      <a href="#" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+            <li class="last">
+              <span>
+                <a href="#none">
+                  회원가입 <i class="ml5 fa-solid fa-angle-down"></i>
+                  <div class="site_panel">
+                    <div class="site_panel_box">
+                      <a href="회원가입" class="site_title">회원가입</a>
+                      <a href="" class="site_title">성적서 신청발급</a>
+                      <a href="#" class="site_title">인증서 신청발급
+                      </a>
+                      <a href="#" class="site_title">인정서 신청발급
+                      </a>
+                      <a href="#" class="site_title">실적서</a>
+                      <a href="#" class="site_title">신청발급</a>
+                    </div>
+                  </div>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 로케이션 eee -->
+
+      <div class="inner">
+        <div class="subContents__header">
+          <div class="content-title-wrap">
+            <h3 class="content-title">
+              회원가입</h3>
+          </div>
+          <div class="content-share-wrap">
+            <div class="btn-group">
+              <button type="button" class="btn-share">
+                <span>공유레이어열기</span>
+              </button>
+              <button type="button" class="btn-print">
+                <span>인쇄</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="subContents__info">
+
+          <div class="step-list-wrap steps5">
+            <ol>
+              <li><span><strong>01.</strong> 유형 선택</span></li>
+              <li><span><strong>02.</strong> 약관동의</span></li>
+              <li class="active" aria-current="page"><span><strong>03.</strong> 정보입력</span></li>
+              <li><span><strong>04.</strong> 가입완료</span></li>
+            </ol>
+          </div>
+
+          <div class="com-agree-wrap">
+            <div class="info">
+              <p>
+                ·<span class="c_red"> ‘*’ 표시는 필수 입력 사항</span>입니다.
+              </p>
+              <p>
+                · 기업회원 구분을 변경하고자 할 때는, ‘유형선택’ 화면에서부터 다시 진행 바랍니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- 회원정보 입력 -->
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                회원정보 입력
+              </h4>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>아이디<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="text" class="form-input w25 mr5">
+                    <button class="btn-xm bg-black mr5">중복 검사</button>
+                    * 6자 이상 ~ 12자 이하의 영문 또는 영문/숫자 조합
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>비밀번호
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="password" class="form-input w25 mr5">
+                    *8자 이상 ~ 12자 이하의 영문, 숫자, 특수문자 조합
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>비밀번호 확인<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="password" class="form-input w25 mr5">
+                    *8자 이상 ~ 12자 이하의 영문, 숫자, 특수문자 조합
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>성명<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    홍길동
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>회원구분<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    기관회원
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>휴대 전화번호</label>
+                  </dt>
+                  <dd>
+                    010-2323-2333
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>전자우편 주소<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <input type="text" class="form-input">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>주소<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="flex flex-mo-fd">
+                      <button class="btn-xm bg-black mr5">주소검색</button>
+                      <input type="text" class="form-input w50 mr5" placeholder="경기도 군포시 금포로">
+                      <input type="text" class="form-input w50" placeholder="4층 4호
+                      ">
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>메일 수신여부<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>수신</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>비수신</span>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>SMS 수신여부<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>수신</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>비수신</span>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>발급 기관<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>신규 기관등록</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>기존 발급기관</span>
+                        </label>
+                      </div>
+                      <button class="btn-xm bg-black ml5">기관 검색</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 신규 발급기관 정보 -->
+          <div class="section bd">
+            <div class="section__header">
+              <h4>
+                신규 발급기관 정보
+              </h4>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>시험·검사기관명
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="text" class="form-input w25 mr5">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>기관 영문ID(약어)
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="text" class="form-input w25 mr5">
+                    *성적서 발급번호 채번 시 사용되며, 이용방식이 '온라인신청'방식일 때, 꼭 입력 바랍니다.
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>사업자등록번호<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="flex flex-mo-fb">
+                    <input type="text" class="form-input w10" placeholder="132">
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w5" placeholder="22">
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w10 mr5" placeholder="123456">
+                    <button class="btn-xm bg-black mr5">법인등록번호검증
+                    </button>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>대표자명<span class="c_red">*</span>
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="text" class="form-input w25 mr5">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>주소<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="flex flex-mo-fd">
+                      <button class="btn-xm bg-black mr5">주소검색</button>
+                      <input type="text" class="form-input w50 mr5" placeholder="경기도 군포시 금포로">
+                      <input type="text" class="form-input w50" placeholder="4층 4호
+                      ">
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>대표 전화번호<span class="c_red">*</span>
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <select type="text" class="form-select w33" placeholder="010">
+                      <option value="010">010</option>
+                    </select>
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w33">
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w33">
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>회사 팩스번호<span class="c_red">*</span>
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <select type="text" class="form-select w33" placeholder="010">
+                      <option value="010">010</option>
+                    </select>
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w33">
+                    &nbsp;-&nbsp;
+                    <input type="text" class="form-input w33">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>기관 소개<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <input type="text" class="form-input mr10">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>신청서 양식<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="ffd">
+                    <!-- 첨부파일 -->
+                    <div class="filebox bs3-primary flex">
+                      <input class="upload-name form-input " value="파일을 첨부하세요." disabled="disabled">
+                      <label for="ex_filename" class="ml10">파일선택</label>
+                      <input type="file" id="ex_filename" class="upload-hidden">
+                    </div>
+
+                    <script>
+                      $(document).ready(function () {
+                        var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function () { // 값이 변경되면
+                          if (window.FileReader) { // modern browser
+                            var filename = $(this)[0].files[0].name;
+                          } else { // old IE
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                            // 파일명만 추출 
+                          }
+
+                          // 추출한 파일명 삽입
+                          $(this).siblings('.upload-name').val(filename);
+                        });
+                      });
+
+                    </script>
+                    <div class="com-dese-txt">
+                      <p class="c_main">[양식] G4B 시험·인증·실적 서비스 이용기관 신청서
+                      </p>
+                      <p>1.상기 신청서를 다운로드 하여 내용을 작성바랍니다.
+                      </p>
+                      <p>2.작성된 확인서를 귀 기관의 직인을 날인 바랍니다.
+                      </p>
+                      <p>3.날인된 파일을 PDF 파일 형태로 변환하여 업로드 바랍니다.
+                      </p>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>기관 유형<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="ffd">
+                    <div class="form-wrap">
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">시험
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">검사
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">교정
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>G4B 이용 장식<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>파일발급</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>온라인신청</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a3">
+                        <label for="a3">
+                          <span>웹서비스 연계</span>
+                        </label>
+                      </div>
+                    </div>
+
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>성적서 제공 수요처(기관)
+                    </label>
+                  </dt>
+                  <dd class="mo-flex-d-c flex-al-center">
+                    <input type="text" class="form-input w25 mr5">
+                    &lt;설명글이 들어갑니다.&gt;
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>
+                      조달청연계 동의여부<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>동의하지 않음</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>동의</span>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>
+                      KOLAS 인정여부<span class="c_red">*</span></label>
+                  </dt>
+                  <dd>
+                    <div class="radio-wrap">
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a1">
+                        <label for="a1">
+                          <span>미인정</span>
+                        </label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="radio2" id="a2">
+                        <label for="a2">
+                          <span>인정</span>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row flex-w50">
+                <dl>
+                  <dt>
+                    <label>KOLAS 인정분류
+                    </label>
+                  </dt>
+                  <dd>
+                    <select name="" id="" class="form-select mr10">
+                      <option value="">선택</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <label>KOLAS 인정번호
+                    </label>
+                  </dt>
+                  <dd>
+                    <input type="text" class="form-input mr10">
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>기관 로고<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="ffd">
+                    <!-- 첨부파일 -->
+                    <div class="filebox bs3-primary flex">
+                      <input class="upload-name form-input " value="파일을 첨부하세요." disabled="disabled">
+                      <label for="ex_filename" class="ml10">파일선택</label>
+                      <input type="file" id="ex_filename" class="upload-hidden">
+                    </div>
+
+                    <script>
+                      $(document).ready(function () {
+                        var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function () { // 값이 변경되면
+                          if (window.FileReader) { // modern browser
+                            var filename = $(this)[0].files[0].name;
+                          } else { // old IE
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                            // 파일명만 추출 
+                          }
+
+                          // 추출한 파일명 삽입
+                          $(this).siblings('.upload-name').val(filename);
+                        });
+                      });
+
+                    </script>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>기관 직인<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="ffd">
+                    <!-- 첨부파일 -->
+                    <div class="filebox bs3-primary flex">
+                      <input class="upload-name form-input " value="파일을 첨부하세요." disabled="disabled">
+                      <label for="ex_filename" class="ml10">파일선택</label>
+                      <input type="file" id="ex_filename" class="upload-hidden">
+                    </div>
+
+                    <script>
+                      $(document).ready(function () {
+                        var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function () { // 값이 변경되면
+                          if (window.FileReader) { // modern browser
+                            var filename = $(this)[0].files[0].name;
+                          } else { // old IE
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                            // 파일명만 추출 
+                          }
+
+                          // 추출한 파일명 삽입
+                          $(this).siblings('.upload-name').val(filename);
+                        });
+                      });
+
+                    </script>
+                  </dd>
+                </dl>
+              </div>
+              <div class="form-group__row">
+                <dl>
+                  <dt>
+                    <label>동의확인서 양식<span class="c_red">*</span></label>
+                  </dt>
+                  <dd class="ffd">
+                    <!-- 첨부파일 -->
+                    <div class="filebox bs3-primary flex">
+                      <input class="upload-name form-input " value="파일을 첨부하세요." disabled="disabled">
+                      <label for="ex_filename" class="ml10">파일선택</label>
+                      <input type="file" id="ex_filename" class="upload-hidden">
+                    </div>
+
+                    <script>
+                      $(document).ready(function () {
+                        var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function () { // 값이 변경되면
+                          if (window.FileReader) { // modern browser
+                            var filename = $(this)[0].files[0].name;
+                          } else { // old IE
+                            var filename = $(this).val().split('/').pop().split('\\').pop();
+                            // 파일명만 추출 
+                          }
+
+                          // 추출한 파일명 삽입
+                          $(this).siblings('.upload-name').val(filename);
+                        });
+                      });
+
+                    </script>
+                    <div class="com-dese-txt">
+                      <p class="c_main">[양식] 조달청 서비스연계 동의여부 확인서 
+                      </p>
+                      <p>1.상기 확인서를 다운로드 하여 내용을 작성바랍니다.
+                      </p>
+                      <p>2.작성된 확인서를 귀 기관의 직인을 날인 바랍니다.
+                      </p>
+                      <p>3.날인된 파일을 PDF 파일 형태로 변환하여 업로드 바랍니다.
+                      </p>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+  
+            </div>
+          </div>
+
+
+          <div class="board-btn-wrap ac">
+            <a href="기관회원완료.html
+          " class="btn btn-lg bg-main radius-mid" title="등록 신청">등록 신청</a>
+            <a class="btn btn-lg bg-black radius-mid" title="취소">취소</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- content eee -->
+
+    <div data-include-path="footer.html"></div>
+
+    <script>
+
+      window.addEventListener('load', function () {
+        var allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function (el) {
+          var includePath = el.dataset.includePath;
+          if (includePath) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                el.outerHTML = this.responseText;
+              }
+            };
+            xhttp.open('GET', includePath, true);
+            xhttp.send();
+          }
+        });
+      });
+
+    </script>
+
+
+
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+  </script>
+
+</body>
+
+</html>

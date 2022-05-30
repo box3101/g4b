@@ -380,7 +380,7 @@ input::placeholder,textarea::placeholder{
   width: 100%;
   margin: 0.625rem auto 1.975rem;
   border-top: 1.5px solid #333;
-  border-bottom: 0.0625rem solid $main-color;
+  border-bottom: 1px solid $main-color;
   overflow: hidden;
   margin-top: 1.25rem;
   table-layout: auto;
@@ -454,7 +454,7 @@ input::placeholder,textarea::placeholder{
   width: 1.4rem;
   height: 1.4rem;
   vertical-align: middle;
-  border: 0.0625rem solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -507,6 +507,8 @@ input::placeholder,textarea::placeholder{
   vertical-align: middle;
   margin-bottom: 1.975rem;
   z-index: 0;
+  margin-top: 1.875rem !important;
+  margin-bottom: 0;
 }
 .paging span {
   vertical-align: middle;
@@ -515,7 +517,7 @@ input::placeholder,textarea::placeholder{
   // height: 0.9375rem;
   line-height: 1.975rem;
   text-align: center;
-  margin-left: -0.0625rem;
+  margin-left: -1px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -586,7 +588,7 @@ input::placeholder,textarea::placeholder{
   font-size: 1.125rem;
   font-weight: 600;
   color: #434343;
-  border-bottom: 0.0625rem solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
   padding: 1.25rem;
 }
 .faq-wrap .faq-section dt:hover {
@@ -648,7 +650,7 @@ button.w120{
 }
 
 .notice{
-  .form-group{border-top: 0.0625rem solid #333;}
+  .form-group{border-top: 1px solid #333;}
   .form-group__row dl dd{
     font-size: 1.5rem; font-weight: bold;
   }
@@ -672,7 +674,7 @@ button.w120{
   color: #555;
   background-color: #fff;
   background-image: none;
-  border: 0.0625rem solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 0.25rem;
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
